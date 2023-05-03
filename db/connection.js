@@ -1,7 +1,7 @@
 // define mongo db connection
 const mongoose=require('mongoose')
 
-const db= process.env.DATABASE
+const db= process.env.MONGO_URI
 
 mongoose.connect(db,{
     useUnifiedTopology:true,
