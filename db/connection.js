@@ -1,11 +1,11 @@
 // define mongo db connection
 const mongoose=require('mongoose')
 
-const db= process.env.database
+const db= process.env.DATABASE
 
 mongoose.connect(db,{
-    useUnifiedTopology:"true",
-    useNewUrlParser:"true"
+    useUnifiedTopology:true,
+    useNewUrlParser:true
 }).then(()=>{
     console.log('database connected');
 }).catch((err)=>{

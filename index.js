@@ -1,5 +1,7 @@
 // automatically load env
-require('dotenv').config()
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 // import express
 const express= require('express')
